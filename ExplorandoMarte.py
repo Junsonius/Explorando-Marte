@@ -138,3 +138,5 @@ nswe2res = result[2]
 
 print("Coordenadas finais da sonda 1: ", pos_res_x1, pos_res_y1, nswe1res)
 print("Coordenadas finais da sonda 2: ", pos_res_x2, pos_res_y2, nswe2res)
+
+input("Pressione enter para continuar")
