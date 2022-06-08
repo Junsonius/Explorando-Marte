@@ -75,12 +75,12 @@ def movimentos (pos_ini_x, pos_ini_y, nswe, n_commands, movimentos, x, y):
     return(pos_ini_x, pos_ini_y, nswe)
 
 ##############################################################
-# coordenadas
+# definição tamanho da malha do planalto
 
 terreno_x = []
 terreno_y = []
 
-xs,ys = input("insira o tamanho do terreno: ").split()
+xs,ys = input("Insira o tamanho do terreno: ").split()
 
 x = int(xs)
 y= int(ys)
@@ -88,7 +88,7 @@ y= int(ys)
 ##############################################################
 # posição inicial sonda 1
 
-pos_ini_x1s,pos_ini_y1s, nswe1 = input("insira a coordenada inicial da sonda 1: ").split()
+pos_ini_x1s,pos_ini_y1s, nswe1 = input("Insira as coordenadas iniciais da sonda 1: ").split()
 
 pos_ini_x1 = int(pos_ini_x1s)
 pos_ini_y1 = int(pos_ini_y1s)
@@ -97,7 +97,7 @@ pos_ini_y1 = int(pos_ini_y1s)
 ##############################################################
 # comandos de movimentações sonda 1
 
-movimentos1 = input("insira as instruções de movimentações da sonda 1: ")
+movimentos1 = input("Insira as instruções de movimentos da sonda 1: ")
 movimentos1 = list(movimentos1)
 n_commands1 = len(movimentos1)
 
@@ -112,7 +112,7 @@ nswe1res = result[2]
 ##############################################################
 # posição inicial sonda 2
 
-pos_ini_x2s,pos_ini_y2s, nswe2 = input("insira a coordenada inicial da sonda 2: ").split()
+pos_ini_x2s,pos_ini_y2s, nswe2 = input("Insira as coordenadas iniciais da sonda 2: ").split()
 
 pos_ini_x2 = int(pos_ini_x2s)
 pos_ini_y2 = int(pos_ini_y2s)
@@ -121,7 +121,7 @@ pos_ini_y2 = int(pos_ini_y2s)
 ##############################################################
 # comandos de movimentações sonda 2
 
-movimentos2 = input("insira as instruções de movimentações da sonda 2: ")
+movimentos2 = input("Insira as instruções de movimentos da sonda 2: ")
 movimentos2 = list(movimentos2)
 n_commands2 = len(movimentos2)
 
@@ -136,5 +136,5 @@ nswe2res = result[2]
 ##############################################################
 # Output
 
-print(pos_res_x1, pos_res_y1, nswe1res)
-print(pos_res_x2, pos_res_y2, nswe2res)
+print("Coordenadas finais da sonda 1: ", pos_res_x1, pos_res_y1, nswe1res)
+print("Coordenadas finais da sonda 2: ", pos_res_x2, pos_res_y2, nswe2res)
